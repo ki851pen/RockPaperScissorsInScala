@@ -1,6 +1,5 @@
 package de.htwg.se.rockpaperscissors.model
 
-class card {
-
+case class card(symbol:String) {
+  override def toString:String = symbol
 }
-
