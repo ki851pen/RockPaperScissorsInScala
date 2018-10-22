@@ -1,20 +1,26 @@
-val win = true
-case class card (symbol:String)
+import scala.collection.mutable.ListBuffer
 
-val card1 = card("rock")
-val card2 = card("paper")
-val card3 = card("scissors")
-val card4 = card("Joker")
+val win = true
+case class card (val symbol:String)
+
+def card1 = card("rock")
+def card2 = card("paper")
+def card3 = card("scissors")
+def card4 = card("Joker")
 card2.symbol
 
-case class Deck(array: Array[card])
-val deck = Deck(Array (card1, card1, card1,
-  card2, card2, card2, card3, card3, card3, card4))
+case class Deck(cards: ListBuffer[card])
 
-deck.array
+val deck: Deck = new Deck(ListBuffer(card1, card2, card3, card1, card2))
+deck.cards.length
+deck.cards.remove(0);
+deck
+deck.cards -= (card2, card2)
+deck
+case class Hand(cards: Vector[card])
 
-case class table(card1: card, card2: card)
-def isSet:Boolean = card1 != null && card2 != null
+val r = scala.util.Random
+r.nextInt(10)
 
-val Table = table(card1, card4)
-Table.card2
+
+
