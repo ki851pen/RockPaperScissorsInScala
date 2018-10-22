@@ -11,16 +11,10 @@ case class Deck(array: Array[card])
 val deck = Deck(Array (card1, card1, card1,
   card2, card2, card2, card3, card3, card3, card4))
 
-var i = deck.array.length - 1
-while ({i > 0}) {
-  val j = Math.floor(Math.random * (i + 1))
-  val temp = deck.array(i)
-  deck.array(i) = deck.array(j)
-  deck.array(j) = temp
-  {
-    i -= 1; i + 1
-  }
-}
+deck.array
 
-deck.array(0)
-deck.array(7)
+case class table(card1: card, card2: card)
+def isSet:Boolean = card1 != null && card2 != null
+
+val Table = table(card1, card4)
+Table.card2
