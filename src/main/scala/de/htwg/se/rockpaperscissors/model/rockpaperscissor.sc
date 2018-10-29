@@ -1,21 +1,22 @@
 import scala.collection.mutable.ListBuffer
 
 val win = true
-case class card (val symbol:String)
+case class card (symbol:String)
 
-def card1 = card("rock")
-def card2 = card("paper")
-def card3 = card("scissors")
-def card4 = card("Joker")
-card2.symbol
+def ro = card("rock")
+def pa = card("paper")
+def sc = card("scissors")
+def jo = card("Joker")
+pa.symbol
 
 case class Deck(cards: ListBuffer[card])
 
-val deck: Deck = new Deck(ListBuffer(card1, card2, card3, card1, card2))
+val deck: Deck = Deck(ListBuffer(ro, pa, sc, ro, jo))
 deck.cards.length
-deck.cards.remove(0);
+deck.cards.remove(0)
+deck.cards.length
 deck
-deck.cards -= (card2, card2)
+deck.cards -= (ro, ro)
 deck
 case class Hand(cards: Vector[card])
 
