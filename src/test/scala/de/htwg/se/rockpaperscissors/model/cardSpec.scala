@@ -4,7 +4,7 @@ import org.scalatest.{Matchers, WordSpec}
 
 class cardSpec  extends WordSpec with Matchers {
   "A Card" should {
-    val card1 = card("symbol")
+    val card1 = Card("symbol")
     "have a symbol"  in {
       card1.symbol should be("symbol")
     }

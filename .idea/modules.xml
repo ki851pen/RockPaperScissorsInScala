@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala.iml" filepath="$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala.iml" filepath="$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala-build.iml" filepath="$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala-build.iml" filepath="$PROJECT_DIR$/.idea/modules/rockpaperscissorsinscala-build.iml" />
     </modules>
   </component>
